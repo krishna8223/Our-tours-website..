@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-family: 'Inter', sans-serif;
+    // font-family: 'Proza Libre', sans-serif;
+    font-family: 'Bree Serif', serif;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::selection{
+    background-color: blue;
+    color:white ;
+}
