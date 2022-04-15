@@ -7,6 +7,13 @@
 $logo-color:#3944F7;
 $secondary-text-color:#2b2996;
 
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #020b8ba6;
+    border-radius: 8px;
+}
 
 .nav_two.fixed{
     position: fixed;
