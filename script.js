@@ -24,7 +24,16 @@ const allHeadings = [...document.getElementsByClassName('underline')]
 const allServices = [...document.getElementsByClassName('services__service')]
 const allSpecial = [...document.getElementsByClassName('specials__image')]
 
-const animation = [allHeadings , allServices, allSpecial]
+const specials = []
+const headings = []
+
+headings.push(allHeadings[1])
+headings.push(allHeadings[2])
+
+specials.push(allSpecial[1])
+specials.push(allSpecial[2])
+
+const animation = [headings , allServices, specials]
 
 animation.forEach((ele)=>{
     ele.forEach((e)=>{
@@ -43,7 +52,7 @@ document.addEventListener('scroll',()=>{
         navTwo.classList.remove('fixed')
 
     }
-    const window20 = (window.innerHeight*70) / 100 
+    const window20 = (window.innerHeight*80) / 100 
     animation.forEach((ele)=>{
         ele.forEach((e)=>{
 
@@ -65,19 +74,22 @@ document.addEventListener('scroll',()=>{
 
 })
 
+
+
+
 // Showing loader ---------------------------------------------------------
 
-document.onreadystatechange = function() {
-    if (document.readyState !== "complete") {
-        document.querySelector("body").style.visibility = "hidden";
-        document.querySelector("#loader").style.visibility = "visible";
-        document.querySelector(".loader").style.visibility = "visible";
-    } else {
-        document.querySelector(".loader").style.display = "none";
-        document.querySelector("#loader").style.display = "none";
-        document.querySelector("body").style.visibility = "visible";
-    }
-};
+// document.onreadystatechange = function() {
+//     if (document.readyState !== "complete") {
+//         document.querySelector("body").style.visibility = "hidden";
+//         document.querySelector("#loader").style.visibility = "visible";
+//         document.querySelector(".loader").style.visibility = "visible";
+//     } else {
+//         document.querySelector(".loader").style.display = "none";
+//         document.querySelector("#loader").style.display = "none";
+//         document.querySelector("body").style.visibility = "visible";
+//     }
+// };
 
 // For slider ----------------------------------------------------------
 

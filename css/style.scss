@@ -784,6 +784,19 @@ $secondary-text-color:#2b2996;
     }
     @media(max-width:480px){
         .hero__heading{
-            font-size: 5rem;
+            font-size: 3.4rem;
+        }
+        .hero{
+            height: 50vh;
+            .hero__text{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &__copy{
+                font-size: 1.8rem;
+            }
         }
     }
+
+
+    

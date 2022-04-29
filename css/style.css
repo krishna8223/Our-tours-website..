@@ -985,7 +985,18 @@ img {
 
 @media (max-width: 480px) {
   .hero__heading {
-    font-size: 5rem;
+    font-size: 3.4rem;
+  }
+  .hero {
+    height: 50vh;
+  }
+  .hero .hero__text {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .hero__copy {
+    font-size: 1.8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
